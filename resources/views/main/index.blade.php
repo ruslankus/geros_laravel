@@ -9,7 +9,7 @@
     <!--<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,300,700" rel="stylesheet" type="text/css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/style.css" >
-    <title>Untitled Document</title>
+    <title>Geroslubos</title>
 
 @stop
 
@@ -26,14 +26,14 @@
 
 
                 <ul class="lng-list pull-right">
-                    <li class="active"><a href="#">Lt</a></li>
-                    <li><a href="#">Ru</a></li>
+                    <!--<li class="active"><a href="#">Lt</a></li> -->
+                    <!-- <li><a href="#">Ru</a></li> -->
                 </ul>
 
                 <ul class="menu-list pull-right hidden-xs">
-                    <li><a href="#services">Our Services</a></li>
-                    <li><a href="#our_jobs">Our jobs</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#services">Įtempiamųjų lubų rūšys</a></li>
+                    <li><a href="#our_jobs" title="">Atlikti darbai</a></li>
+                    <li><a href="#contacts" title="Kontaktai">Kontaktai</a></li>
                 </ul>
 
 
@@ -59,16 +59,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="header-holder col-xs-8 col-xs-offset-2 clearfix ">
-                    <h2 class="text-center"><span>Our servises</span></h2>
+                    <h2 class="text-center"><span>Įtempiamųjų lubų rūšys</span></h2>
                 </div><!--/holder -->
 
                 <div class="col-xs-12 col-md-6 service srv1" style="background-image:url(img/srv1_bg.png)">
-                    <h3>Service 1</h3>
+                    <h3>Veidrodinės įtempiamos lubos</h3>
                     <p>Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности играет важную роль в формировании существенных финансовых и административных условий. С другой стороны укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки форм развития.</p>
                 </div><!-- /srv1 -->
 
                 <div class="col-xs-12 col-md-6 service srv2" style="background-image:url(img/srv2_bg.png)">
-                    <h3>Service 1</h3>
+                    <h3>Matines įtempiamos lubos</h3>
                     <p>Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности играет важную роль в формировании существенных финансовых и административных условий. С другой стороны укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки форм развития.</p>
                 </div><!-- /srv2 -->
             </div>
@@ -79,16 +79,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="header-holder col-xs-8 col-xs-offset-2 clearfix ">
-                    <h2 class="text-center"><span>Our jobs</span></h2>
+                    <h2 class="text-center"><span>Atlikti darbai</span></h2>
                 </div><!--/holder -->
             </div>
 
             <div class="row filter-holder">
                 <ul class="col-xs-12">
-                    <li><a href="#">Лак 1</a></li>
-                    <li><a href="#">Лак 2</a></li>
-                    <li><a href="#">Лак 3</a></li>
-                    <li><a href="#">Лак 4</a></li>
+                    <!--<li><a href="#">Лак 1</a></li> -->
+                    <!--<li><a href="#">Лак 2</a></li> -->
+                    <!--<li><a href="#">Лак 3</a></li> -->
+                    <!-- <li><a href="#">Лак 4</a></li> -->
                 </ul>
             </div>
             <div class="row gallery-holder clearfix">
@@ -148,7 +148,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="header-holder col-xs-8 col-xs-offset-2 clearfix ">
-                    <h2 class="text-center"><span>Contacts</span></h2>
+                    <h2 class="text-center"><span>Kontaktai</span></h2>
                 </div><!--/holder -->
             </div><!--/row -->
 
@@ -169,7 +169,7 @@
                     <form class="form" method="post" action="<?=action('MainController@postSendEmail');?>">
                         <input type="hidden" name="_token" value="<?=$token; ?>">
                         <div class="your-name">
-                            <label>Ваше имя</label>
+                            <label>Jūsų vardas</label>
                             <div>
                                 <input type="text" name="name" >
                             </div>
@@ -177,14 +177,14 @@
 
                         <div class="phone-mail clearfix">
                             <div class="phone">
-                                <label>Ваше phone</label>
+                                <label>Jūsų tel. numeris</label>
                                 <div>
                                     <input type="text" name="phone" >
                                 </div>
                             </div><!--/mail -->
 
                             <div class="mail">
-                                <label>Ваше email</label>
+                                <label> Jūsų el. pašto adresas</label>
                                 <div>
                                     <input type="email" name="email" >
                                 </div>
@@ -193,14 +193,14 @@
                         </div><!--/phone-mail -->
 
                         <div>
-                            <label>Ваше сообщениe</label>
+                            <label>Jūsų žinutė</label>
                             <div>
                                 <textarea name="message"></textarea>
                             </div>
                         </div>
 
                         <div class="btn-holder">
-                            <button class="btn btn-default"  id="sendMsg" >Send</button>
+                            <button class="btn btn-default"  id="sendMsg" >Siųsti</button>
                         </div>
                     </form>
                 </div><!--/r-side -->
